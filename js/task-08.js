@@ -7,7 +7,7 @@ registerForm.addEventListener('submit', e => {
     
     if (event.currentTarget.elements.email.value === "" ||
         event.currentTarget.elements.password.value === "") {
-        alert("Please fill in all the fields!");
+        return alert("Please fill in all the fields!");
     }
 
     usersDatabase.email = event.currentTarget.elements.email.value
